@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head.ejs') %>
+    </head>
+
+    <body>
+        <div class="row padding">
+            <h3>See All The Pokemon!</h3>
+
+            <% pokemon.forEach((pokemon, index) => { %>
+                <h5>
+                    <a href="/pokemon/<%= index %>"><%= pokemon.getFormattedName() %></a>
+                </h5>
+            <% }) %>
+        </div>
+    </body>
+</html>

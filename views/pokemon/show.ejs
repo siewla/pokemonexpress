@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head.ejs') %>
+    </head>
+
+    <body>
+        <div class="row padding">
+            <h3>Gotta catch 'em all!</h3>
+            <div class="col">
+                <div class="card">
+                    <div class="card-image">
+                        <img
+                            class="pokemon-image"
+                            src="<%= pokemon.img %>"
+                            alt="<%= pokemon.name %>"
+                        >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title black-text"><%= pokemon.getFormattedName() %></span>
+                    </div>
+                    <div class="card-action">
+                        <a href="/" class="blue-text">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
